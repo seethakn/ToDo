@@ -1,0 +1,48 @@
+<!-- ToDo App website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TODO App</title>
+
+  <!-- Replaced with personal Font Awesome CDN link -->
+  <script src="https://use.fontawesome.com/058e0da5fd.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <h1>Minion Jobs</h1>
+  <form id="todoForm">
+    <fieldset>
+      <legend>Minion Pool - who should do it?</legend>
+      <label for="bob">Bob</label>
+      <input type="radio" name="minion" id="bob" value="Bob" required>
+      <label for="dave">Dave</label>
+      <input type="radio" name="minion" id="dave" value="Dave">
+      <label for="kevin">Kevin</label>
+      <input type="radio" name="minion" id="kevin" value="Kevin">
+      <label for="phil">Phil</label>
+      <input type="radio" name="minion" id="phil" value="Phil">
+      <label for="stuart">Stuart</label>
+      <input type="radio" name="minion" id="stuart" value="Stuart">
+    </fieldset>
+    <fieldset>
+      <legend>Task Information</legend>
+      <label for="taskDifficulty">Task Difficulty</label>
+      <select id="taskDifficulty" required>
+        <option value="a simple">Simple</option>
+        <option value="a demanding">Demanding</option>
+        <option value="a challenging">Challenging</option>
+        <option value="an intimidating">Intimidating</option>
+      </select>
+      <label for="taskDescription">Task Information</label>
+      <input type="text" id="taskDescription" size="90" placeholder="secure a shrink ray" required>
+    </fieldset>
+    <input type="button" id="assignTask" onclick="getFormData();" value="Assign Task">
+  </form>
+  <ul id="todoTasksList"></ul>
+  </div>
+</body>
+</html>
