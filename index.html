@@ -14,7 +14,7 @@
 </head>
 <body>
   <h1>Minion Tasks</h1>
-  <form id="todoForm">
+  <form id="todoForm" onsubmit="getFormData(); return false;">
     <fieldset>
       <legend>Minion Pool - who should do it?</legend>
       <label for="bob">Bob</label>
@@ -40,7 +40,7 @@
       <label for="taskDescription">Task Information</label>
       <input type="text" id="taskDescription" size="90" placeholder="secure a shrink ray" required>
     </fieldset>
-    <input type="button" id="assignTask" onclick="getFormData();" value="Assign Task">
+    <input type="submit" id="assignTask" value="Assign Task">
   </form>
   <ul id="todoTasksList"></ul>
   </div>

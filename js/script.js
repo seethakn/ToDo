@@ -10,10 +10,13 @@ function task(minion, taskDescription, taskDifficulty)
   }
 
 /*window.onload = function(){
-  console.log("Function called");
-  var submitButton = document.getElementById("assignTask");
-  submitButton.onclick = getFormData();
+  //console.log("Function called");
+  //var submitButton = document.getElementById("assignTask");
+  //submitButton.onclick = getFormData();
+  var form = document.querySelector("form");
+  form.onsubmit = getFormData;
 }*/
+
 
 function getFormData(){
   var taskDescription = document.getElementById("taskDescription").value;

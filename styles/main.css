@@ -28,7 +28,7 @@ h1 {
 }
 
 /*********** Form Element Styles ********************/
-input[type="button"]{
+input[type="submit"]{
   border-radius: 0px 2px 2px 0px;
   background-color: rgb(245,220,80);
   font-weight: 300;
@@ -41,7 +41,7 @@ input[type="button"]{
   margin-top: 0.3em;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
   background-color: rgb(30,106,159);
   color: rgb(245,220,80);
 }
